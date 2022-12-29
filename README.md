@@ -69,6 +69,9 @@ Once the controller registers valid cp command, it copies mail.png into gist as 
 1) Type "bot_name:exe:echo.sh" once prompted by the controller
 2) There is no output sent to the controller, it is only executed in the bot's folder
 ![image](https://user-images.githubusercontent.com/33172723/210005397-69a3c091-668c-49a8-b5c6-39a5083d031d.png)
+  
+## Shutting down
+1) CTRL+C in both terminals, bot terminal first however. Only this will make the bot exit as it should - that is deleting its name from scores.txt.
 
 
 
