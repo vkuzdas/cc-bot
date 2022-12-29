@@ -12,8 +12,8 @@ You can run each .py script right after cloning. Just make sure you run the **bo
 (You should see a log in form of *<bot_name> got created*)
 3) cc_bot$ **python3 controller.py**
 <p>This is how your terminals should look like :</p>
-![image](https://user-images.githubusercontent.com/33172723/209997781-597d8159-95ad-4b98-9e97-e4301e9be084.png)
-
+![image](https://user-images.githubusercontent.com/33172723/209997926-be258824-3830-43d4-8ce2-a11f8c5b2d2d.png)
+<p> Controller should see that "Mat9" bot is up, bot itself should wait for commands from controller and there should be "Mat9" in scores.txt in the gist folder</p>
 
 
 ### 'w'   (list of users currently logged in)
