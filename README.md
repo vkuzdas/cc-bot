@@ -1,12 +1,12 @@
 # cc-bot
 
-repo for Bonus assignment 5
-client controlled bot on infected computer
+Repo for Bonus assignment 5.
+Client controlled bot on infected computer.
 
 ## How to run
 You can run each .py script right after cloning. Just make sure you run the **bot.py** before **controller.py**.
 
-### start-up
+## start-up
 
 1) Open two terminals, one in cc-bot, second in cc-bot/infected.
 2) cc_bot/infected$ **python3 bot.py**
@@ -22,7 +22,7 @@ You can run each .py script right after cloning. Just make sure you run the **bo
 bot_name:rmresp
 <p> to remove bot responses so that there are no overlapping responses confusing the controller. </p>
 
-### 'w'   (list of users currently logged in)
+## 'w'   (list of users currently logged in)
 1) In the controller terminal, after initialization, type "<bot_name>:w" to list currently logged int users
 2) **You should always wait at least a minut between each command so there is no merge conflict**
 <p>This is how your terminals should look like :</p>
@@ -31,7 +31,7 @@ bot_name:rmresp
 
 <p>Controller got a response with list of logged in users, we can see there is only user 'vk' logged in. This response is also written in history.txt in github. The command itself is encoded as emoji. </p>
 
-### ls <PATH> (list content of specified directory)
+## ls <PATH> (list content of specified directory)
 1) Type "<bot_name>:ls:.." to list the directory above bot's current command in controller
   
 ![image](https://user-images.githubusercontent.com/33172723/210002714-00e1cb49-4f79-4630-a747-6aa7f5b03692.png)
@@ -40,7 +40,7 @@ response in controller
   
 ![image](https://user-images.githubusercontent.com/33172723/210003018-2184bd41-57bf-4e11-9537-c41a1f15c9c6.png)
 
-### id (if of current user)
+## id (if of current user)
 1) Type "<bot_name>:id" to view user id
   
 response in controller
@@ -48,14 +48,14 @@ response in controller
 ![image](https://user-images.githubusercontent.com/33172723/210003222-c9d6cdbf-4e05-47d9-b1f1-ccb30d1a551f.png)
 
   
-### Copy a file from the bot to the controller
+## Copy a file from the bot to the controller
 <p>This operation is by far the most merge conflict sensitive and merge conflict inducing aswell :). Do give the bot about a minute or so to do its job. </p>
 1) Type *Mat9:cp:echo.sh* once prompted by the controller
 2) Wait 1 min
 3) See the controller folder
 
 
-#### Explanation:
+### Explanation:
 Once the controller registers valid cp command, it copies mail.png into gist as a steganographic envelope. This enveloped is then pulled by the bot. Bot then zips the file that the controller wants to copy into the pulled envelope. This zipped envelope gets pushed back into repo. Controller then fetches the mail.png, now zipped with the prompted file and unpacks it in controller's folder.
 <p>Note: github messes up zipped envelope for some reason and does not display the PNG. The PNG is however viewable for a brief moment right after controller pushes is as envelope. </p>
 
@@ -65,7 +65,7 @@ Once the controller registers valid cp command, it copies mail.png into gist as 
 ![image](https://user-images.githubusercontent.com/33172723/210003615-f7b8bcf4-6ac9-4c2f-aac1-e496993ef502.png)
 
 
-### Execute a binary inside the bot given the name of the binary
+## Execute a binary inside the bot given the name of the binary
 1) Type *Mat9:exe:echo.sh* once prompted by the controller
 2) There is no output sent to the controller, it is only executed in the bot's folder
 ![image](https://user-images.githubusercontent.com/33172723/210004365-3eda0d1c-7a4f-4af6-8fb7-3a5a53dce200.png)
