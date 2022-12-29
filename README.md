@@ -50,7 +50,7 @@ response in controller
   
 ## Copy a file from the bot to the controller
 <p>This operation is by far the most merge conflict sensitive and merge conflict inducing aswell :). Do give the bot about a minute or so to do its job. </p>
-1) Type *Mat9:cp:echo.sh* once prompted by the controller
+1) Type "bot_name:cp:echo.sh" once prompted by the controller
 2) Wait 1 min
 3) See the controller folder
 
@@ -66,7 +66,7 @@ Once the controller registers valid cp command, it copies mail.png into gist as 
 
 
 ## Execute a binary inside the bot given the name of the binary
-1) Type "Mat9:exe:echo.sh" once prompted by the controller
+1) Type "bot_name:exe:echo.sh" once prompted by the controller
 2) There is no output sent to the controller, it is only executed in the bot's folder
 ![image](https://user-images.githubusercontent.com/33172723/210005397-69a3c091-668c-49a8-b5c6-39a5083d031d.png)
 
