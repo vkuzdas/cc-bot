@@ -17,7 +17,7 @@ You can run each .py script right after cloning. Just make sure you run the **bo
 
 ![image](https://user-images.githubusercontent.com/33172723/209997926-be258824-3830-43d4-8ce2-a11f8c5b2d2d.png)
 
-<p> Controller should see that "Mat9" bot is up, bot itself should wait for commands from controller and there should be "Mat9" in scores.txt in the gist folder</p>
+<p> Controller should see that "Mat9" bot is up, bot itself should wait for commands from controller and there should be "Mat9" in scores.txt in the gist folder https://gist.github.com/vkuzdas/b986ad8f94834deaf526315971868580 .</p>
 <p>Make sure that activities.txt file is empty so that there are no overlapping commands. Also make sure to type</p>
 bot_name:rmresp
 <p> to remove bot responses so that there are no overlapping responses confusing the controller. </p>
